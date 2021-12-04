@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Movie </title>
+  <title>Bank Account</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
@@ -9,33 +9,34 @@
 </head>
 <body>
   <div class="container">
-    <form id="form">
+    <form id="new-account">
       <div class="form-group">
-        <label for="movieSelect">Movie</label>
-        <select class="form-control" id="movieSelect">
-          <option value="false">Movie 1</option>
-          <option value="true">Movie 2</option>
-          <option value="true">Movie 3</option>
-        </select> 
+        <label for="name">Name: </label>
+        <input class="form-control" id="name">
       </div>
       <div class="form-group">
-        <label for="timeSelect">Time</label>
-        <select class="form-control" id="timeSelect">
-          <option value="true">10.00</option>
-          <option value="false">19.00</option>
-        </select> 
+        <label for="initial-deposit">Initial deposit:</label>
+        <input class="form-control" id="initial-deposit">
       </div>
-      <div class="form-group">
-        <label for="ageSelect">Age</label>
-        <select class="form-control" id="ageSelect">
-          <option value="true">Senior</option>
-          <option value="false">Non-senior</option>
-        </select>
-      </div>
-      <button type="submit" class="btn-primary">Submit</button>
+      <button type="submit" id="submit-new-account">Create Account</button>
     </form>
-    <div id="ticket-price">
-      <p>Ticket Price: <span class="ticket-price"></span></p>
+    <form id="change-balance">
+      <div class="form-group">
+        <label for="account-number">Account number:</label>
+        <input class="form-control" id="account-name">
+      </div> 
+      <div class="form-group">
+        <label for="withdrawal">Withdrawal amount: </label>
+        <input class="form-control" id="withdrawal">
+      </div>
+      <div class="form-group">
+        <label for="deposit">Deposit amount:</label>
+        <input class="form-control" id="deposit">
+      </div>
+      <button type="submit" id="submit-balance">Submit</button>
+    </form>
+    <div id="current-balance">
+      <p>The balance for <span id="account"></span> is <span id="balance"></span>. The account number is <span id="number" .></p>
     </div>
   </div>
 </body>
